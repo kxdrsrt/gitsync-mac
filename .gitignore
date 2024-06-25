@@ -1,49 +1,85 @@
 # Custom Include List (do not modify this comment)
+!~/.*
+!~/.config
 !/Library/Application Support
 !/Library/PreferencePanes
 !/Library/Preferences
 !/System/Library/PreferenceBundles
 !/System/Library/PreferenceManifests
 !/System/Library/PreferencePanes
-!/System/Library/Preferences
-!/$USERNAME/.*
 
 # Custom Exclude List (do not modify this comment)
-/Library/Application Support/Apple/AssetCache/Data
-/Library/Application Support/Apple/ParentalControls/Users
+
+## Exclusions from the macOS root directory
 /Library/Application Support/ApplePushService
-/Library/Application Support/Microsoft/EdgeUpdater/118.0.2088.86/Crashpad
-*/Cache/*
-*/History/*
-*/Logs/*
-*/ParentalControls/*
+/Library/Application Support/BTServer
+/Library/Application Support/iLifeMediaBrowser
+/Library/Application Support/Microsoft
+/Library/Application Support/ProApps
+/Library/Application Support/Ryujinx
+/Library/Application Support/com.apple.idleassetsd
+/Library/Application Support/MobileSync/Backup
+/Library/Containers/com.apple.ipswdownloadservice
+/Library/Application Support/Dock/desktoppicture.db
+/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.apple.systempreferences.sfl2
+/Library/Preferences/com.apple.desktop.plist
+
+## Exclusions from the user's home directory
 */cache/*
+*/Cache/*
 */crashpad/*
 */history/*
+*/History/*
 */logs/*
-/$USERNAME/.ssh
-/$USERNAME/.vscode
-/$USERNAME/Applications
-/$USERNAME/Desktop
-/$USERNAME/Documents
-/$USERNAME/Downloads
-/$USERNAME/Movies
-/$USERNAME/Music
-/$USERNAME/Pictures
-/$USERNAME/Public
-/CloudDocs/*
-/Mobile Documents/*
-/iCloudDrive/*
+*/Logs/*
+*/ParentalControls/*
 .DS_Store
+.Spotlight-V100
 .Trash
 .Trashes
 .VolumeIcon.icns
 .AppleDouble
-.Spotlight-V100
 .fseventsd
 *.cache
+*.crash*
 *.history
 *.log
+*report*
+
+# Exclude specific user directories
+~/.config/raycast
+~/.ssh
+~/.vscode
+
+# Exclude specific system and application directories
+~/Applications
+~/CloudDocs/*
+~/Desktop
+~/Documents
+~/Downloads
+~/Library
+~/Movies
+~/Music
+~/Parallels Applications
+~/Parallels Folders
+~/Pictures
+~/Public
+~/Sites
+~/Templates
+~/Videos
+~/WebCatalog Apps
+~/Workspace
+
+# Exclude iCloud preferences and directories
+~/Library/Mobile Documents/*
+~/Library/Preferences/com.apple.iCloudHelper.plist
+~/Library/Preferences/com.apple.iCloudDrive.plist
+~/Library/Preferences/MobileMeAccounts.plist
+
+# Exclude password and keychain related directories and files
+~/Library/Application Support/Keychains
+~/Library/Keychains/*
+~/Library/Preferences/com.apple.keychainaccess.plist
 
 # Git-specific ignore patterns
 node_modules/
