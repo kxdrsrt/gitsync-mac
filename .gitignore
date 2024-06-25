@@ -1,0 +1,13 @@
+# Exclude specified directories in the home directory
+/Users/k/Downloads/
+/Users/k/Pictures/
+/Users/k/.ssh/
+/Users/k/Desktop/
+/Users/k/Documents/
+/Users/k/Music/
+/Users/k/Movies/
+/Users/k/Public/
+/Users/k/Applications/
+
+# Ensure all other files, including dotfiles, are included
+!/Users/k/.*
