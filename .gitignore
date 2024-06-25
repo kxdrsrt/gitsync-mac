@@ -1,13 +1,49 @@
-# Exclude specified directories in the home directory
-/Users/k/Downloads/
-/Users/k/Pictures/
-/Users/k/.ssh/
-/Users/k/Desktop/
-/Users/k/Documents/
-/Users/k/Music/
-/Users/k/Movies/
-/Users/k/Public/
-/Users/k/Applications/
+# Custom Include List (do not modify this comment)
+!/Library/Application Support
+!/Library/PreferencePanes
+!/Library/Preferences
+!/System/Library/PreferenceBundles
+!/System/Library/PreferenceManifests
+!/System/Library/PreferencePanes
+!/System/Library/Preferences
+!/$USERNAME/.*
 
-# Ensure all other files, including dotfiles, are included
-!/Users/k/.*
+# Custom Exclude List (do not modify this comment)
+/Library/Application Support/Apple/AssetCache/Data
+/Library/Application Support/Apple/ParentalControls/Users
+/Library/Application Support/ApplePushService
+/Library/Application Support/Microsoft/EdgeUpdater/118.0.2088.86/Crashpad
+*/Cache/*
+*/History/*
+*/Logs/*
+*/ParentalControls/*
+*/cache/*
+*/crashpad/*
+*/history/*
+*/logs/*
+/$USERNAME/.ssh
+/$USERNAME/.vscode
+/$USERNAME/Applications
+/$USERNAME/Desktop
+/$USERNAME/Documents
+/$USERNAME/Downloads
+/$USERNAME/Movies
+/$USERNAME/Music
+/$USERNAME/Pictures
+/$USERNAME/Public
+/CloudDocs/*
+/Mobile Documents/*
+/iCloudDrive/*
+.DS_Store
+.Trash
+.Trashes
+.VolumeIcon.icns
+.AppleDouble
+.Spotlight-V100
+.fseventsd
+*.cache
+*.history
+*.log
+
+# Git-specific ignore patterns
+node_modules/
